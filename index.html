@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">LSDE2022_Group16</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#h1">Public Attention</a></li>
+        <li><a href="#h2">Keywords</a></li>
+        <li> <a href="#h3">Sentiment Analysis</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">W1: Covid-19 on the Web</h2>
+    <p class="tagline">LSDE2022 Group16: Weiqiang Guo, Lu Wang, Zheng Zhang</p>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">The <a href="https://commoncrawl.org/">Common Crwal Corpus</a>, which has petabytes of web pages gathered since 2008, was used for this project's project data. The data was filtered from the original dataset and only the UK pages that were pertinent to COVID-19 were maintained.</p>
+    <p class="text_column">Using the YAKE! model, we retrieved the keywords from each of the filtered pages and produced word clouds. Use T5-Transformer to summarize each filtered page, then use Bert Model to analyze the sentiment.</p>
+    <p class="text_column">Visualising our outcome may allow users to get a sense of what British people care most when they talk about Covid-19, how they feel when discussing it, how much importance they place on it, and how they have changed over last two years.</p>
+  </section>
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">7090TiB</h1>
+      <h4>Size of Dataset</h4>
+      <p>Common Crawl Corpus</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">1.5 Billion</h1>
+      <h4>Number of UK Pages</h4>
+      <p>Filtered Data from Common Crawl</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">154,573</h1>
+      <h4>Average Number of Pages Per Month</h4>
+      <p>UK and Cvoid-19 Related</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">15</h1>
+      <h4>The number of Countries</h4>
+      <p>Trend of Covid-19 Topic</p>
+    </div>
+  </div>
+  <!-- Parallax Section -->
+  <header class="header1" id="h1">
+        <h2>Public Interest in COVID-19 in Designated Countries</h2>
+  </header>
+  <div class="box"><p>The dynamic map is based on counting the number of pages related to covid-19 in different countries each month.</p> <p>With the closer the colour is to red the higher the level of interest and the closer to blue the lower the level of interest.</p>
+  </div>
+  <section class="banner">
+	<div id="tab_1">
+		<iframe src="images/map_word/add-map.html"
+				height="700"
+				width="100%"
+				frameborder="0"
+				scrolling="0"
+		></iframe>
+	</div>
+<!--    <h2 class="parallax">PARALLAX HERO</h2>-->
+<!--    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>-->
+  </section>
+  <header class="header1" id="h2">
+        <h2>Words of the Month(UK)</h2>          
+  </header>
+  <div class="box"><p>The word cloud is a visual display of keyword extraction results for monthly relevant pages.</p>
+	  <p>The more frequent the words appear in that month, the larger the area it will be.</p>
+  </div>
+  <section class="banner">
+	<div id="tab_2" align="center">
+		<iframe src="images/map_word/example/wordCloud.html"
+				height="700"
+				width="100%"
+				frameborder="0"
+				scrolling="0"
+		></iframe>
+	</div>
+  </section>
+  <!-- More Info Section -->
+  
+  <!-- Footer Section -->
+  <header class="header1" id="h3">
+        <h2>Sentiment Analysis(UK)</h2>
+            
+  </header>
+  <div class="box"><p>The sentiment analysis in the chart is derived from summaries of each relevant page in each month</p>
+  	<p>The percentage of positive sentiment is shown by the green bar on the left, while the converse is postive on its right.</p>
+  </div>
+  <section class="footer_banner" id="contact">
+	  <div id="tab_3" align="center">
+		<iframe src="images/sentiment-pessimistic/sentiment-pessimistic.html"
+				height="700"
+				width="100%"
+				frameborder="0"
+				scrolling="0"
+		></iframe>
+	  </div>
+<!--
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+-->
+  </section>
+  <!-- Copyrights Section -->
+  <div class="copyright">LSDE2022 <strong>W1: Covid-19 on the Web</strong></div>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
